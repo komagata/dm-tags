@@ -9,4 +9,8 @@ class Tag
   def taggables
     taggings.map { |tagging| tagging.taggable }
   end
+
+  def link
+    "/tags/#{name}/"
+  end
 end
